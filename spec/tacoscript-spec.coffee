@@ -1,7 +1,7 @@
 fs = require 'fs'
 path = require 'path'
 
-describe "CoffeeScript grammar", ->
+describe "TacoScript grammar", ->
   grammar = null
 
   beforeEach ->
@@ -249,10 +249,10 @@ describe "CoffeeScript grammar", ->
     expect(tokens[3]).toEqual value: "extends", scopes: ["source.taco"]
 
   it "verifies that regular expressions have explicit count modifiers", ->
-    source = fs.readFileSync(path.resolve(__dirname, '..', 'grammars', 'coffeescript.cson'), 'utf8')
+    source = fs.readFileSync(path.resolve(__dirname, '..', 'grammars', 'tacoscript.cson'), 'utf8')
     expect(source.search /{,/).toEqual -1
 
-    source = fs.readFileSync(path.resolve(__dirname, '..', 'grammars', 'coffeescript (literate).cson'), 'utf8')
+    source = fs.readFileSync(path.resolve(__dirname, '..', 'grammars', 'tacoscript (literate).cson'), 'utf8')
     expect(source.search /{,/).toEqual -1
 
   it "tokenizes embedded JavaScript", ->
