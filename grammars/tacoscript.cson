@@ -163,7 +163,7 @@
     'name': 'keyword.operator.spread.taco'
   }
   {
-    'match': '(and|or|<<|>>>?|(?<!\\()\\/|[=!<>*%+\\-&^])?=(?!>)|[%^*\\/~?:]|\\-?\\-(?!>)|\\+\\+?|<>|<|>|&|\\||\\b(?<![\\.\\$])(and|or|is|isnt|not|super)(?!\\s*:)\\b'
+    'match': '(and|or|<<|>>>?|(?<!\\()\\/|[=!<>*%+\\-&^])?=(?!>)|[%^*\\/~?:]|\\-?\\-(?!>)|\\+\\+?|<>|<|>|&|\\||\\b(?<![\\.\\$])(and|or|is|isnt|like|unlike|not|super)(?!\\s*:)\\b'
     'name': 'keyword.operator.taco'
   }
   {
@@ -257,7 +257,7 @@
     'name': 'constant.language.boolean.false.taco'
   }
   {
-    'match': '@?\\b(?!class|subclass|extends|decodeURI(Component)?|encodeURI(Component)?|eval|parse(Float|Int)|require)\\w+(\\s+(?!(of|in|then|is|isnt|and|or|for|else|when|not|if)\\s)(?=(@?\\w+|\\->|\\-\\d|\\[|\\{|\"|\'))|(?=[\\(!]))'
+    'match': '@?\\b(?!class|subclass|extends|decodeURI(Component)?|encodeURI(Component)?|eval|parse(Float|Int)|require)\\w+(\\s+(?!(of|in|then|is|isnt|like|unlike|and|or|for|else|when|not|if)\\s)(?=(@?\\w+|\\->|\\-\\d|\\[|\\{|\"|\'))|(?=[\\(!]))'
     'name': 'entity.name.function.taco'
   }
   {
