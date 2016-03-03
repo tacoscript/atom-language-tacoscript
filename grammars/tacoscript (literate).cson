@@ -1,11 +1,10 @@
-'comment': 'CoffeeScript (Literate)'
+'comment': 'TacoScript (Literate)'
 'fileTypes': [
-  'litcoffee'
-  'litcoffee.erb'
-  'coffee.md'
+  'litaco'
+  'taco.md'
 ]
-'name': 'CoffeeScript (Literate)'
-'scopeName': 'source.litcoffee'
+'name': 'TacoScript (Literate)'
+'scopeName': 'source.litaco'
 'patterns': [
   {
     'begin': '^(?=([ ]{4}|\\t)(?!$))'
@@ -243,7 +242,7 @@
     'name': 'markup.raw.block.markdown'
     'patterns': [
       {
-        'include': '#coffee_script'
+        'include': '#tacoscript'
       }
     ]
   'bold':
@@ -345,10 +344,10 @@
     'comment': 'Markdown will convert this for us. We match it so that the HTML grammar will not mark it up as invalid.'
     'match': '<(?![a-z/?\\$!])'
     'name': 'meta.other.valid-bracket.markdown'
-  'coffee_script':
+  'tacoscript':
     'patterns': [
       {
-        'include': 'source.coffee'
+        'include': 'source.taco'
       }
     ]
   'escape':

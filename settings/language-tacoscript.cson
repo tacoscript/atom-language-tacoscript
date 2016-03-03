@@ -1,0 +1,18 @@
+'.source.taco, .source.litaco, .source.taco.md':
+  'editor':
+    'commentStart': '# '
+'.source.taco':
+  'editor':
+    'autoIndentOnPaste': false
+    'increaseIndentPattern': '(?x)
+      ^\\s*
+      (
+        .*\\bclass\\b(?!.*?then)
+        | [a-zA-Z\\$_](\\w|\\$|:|\\.)*\\s*(?=\\:(\\s*\\(.*\\))?\\s*\\*?((\\+?=|-|\\+)>>?\\s*$))
+        | [a-zA-Z\\$_](\\w|\\$|\\.)*\\s*(:|=)\\s*(if\\!?|$)
+        | \\b(if|else|while|case)\\b(?!.*?then)
+        | \\b(try|finally|catch|((catch|switch)\\s+\\S.*))\\b\\s*$
+        | \\b(\\!|for|do|var|let|const|extern)\\b\\s*$
+        | .*[\\{\\[]\\s*$
+      )'
+    'decreaseIndentPattern': '^\\s*(\\}|\\]|\\b(else|catch|finally)\\b)$'
